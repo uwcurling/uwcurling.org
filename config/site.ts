@@ -17,42 +17,30 @@ export const siteConfig = {
       href: "/competitions",
     },
     {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
       label: "About",
       href: "/about",
+    },
+    {
+      label: "Contact",
+      href: "/contact",
     },
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "Standings",
+      href: "/standings",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Competitions",
+      href: "/competitions",
     },
     {
-      label: "Projects",
-      href: "/projects",
+      label: "Contact",
+      href: "/contact",
     },
     {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
+      label: "About",
+      href: "/about",
     },
     {
       label: "Logout",
