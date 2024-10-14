@@ -31,8 +31,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-         sparse-checkout: curling_frontend
       
       - name: Detect package manager
         id: detect-package-manager
