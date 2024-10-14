@@ -1,24 +1,24 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "UW Curling",
+  description: "Official home of the UW-Madison Curling Club!",
   navItems: [
     {
       label: "Home",
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Standings",
+      href: "/standings",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Competitions",
+      href: "/competitions",
     },
     {
-      label: "Blog",
-      href: "/blog",
+      label: "Calendar",
+      href: "/calendar",
     },
     {
       label: "About",
@@ -62,6 +62,7 @@ export const siteConfig = {
   links: {
     github: "/",
     twitter: "/",
+    instagram: "https://www.instagram.com/curlinguw/",
     docs: "/",
     discord: "https://discord.gg/mqPgszhKpR",
     sponsor: "https://venmo.com/uwcurling",

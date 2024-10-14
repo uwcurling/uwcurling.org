@@ -1,29 +1,23 @@
 import * as React from "react";
 
 import { IconSvgProps } from "@/types";
-
+import { CurlingIcon } from 'hugeicons-react'
 export const Logo: React.FC<IconSvgProps> = ({
   size = 36,
   width,
   height,
   ...props
 }) => (
-  <svg
-    fill="none"
-    height={size || height}
-    viewBox="0 0 32 32"
-    width={size || width}
-    {...props}
-  >
-    <path
-      clipRule="evenodd"
-      d="M17.6482 10.1305L15.8785 7.02583L7.02979 22.5499H10.5278L17.6482 10.1305ZM19.8798 14.0457L18.11 17.1983L19.394 19.4511H16.8453L15.1056 22.5499H24.7272L19.8798 14.0457Z"
-      fill="currentColor"
-      fillRule="evenodd"
-    />
-  </svg>
+ <CurlingIcon size={36} color="#C5050C"/>
 );
 
+export const InstagramIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" width={25} height={25} color={"#000000"} fill={"none"} {...props}>
+    <path d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+    <path d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z" stroke="currentColor" strokeWidth="1.5" />
+    <path d="M17.5078 6.5L17.4988 6.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
 export const DiscordIcon: React.FC<IconSvgProps> = ({
   size = 24,
   width,
