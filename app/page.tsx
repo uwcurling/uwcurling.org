@@ -2,7 +2,7 @@ import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
 import { button as buttonStyles } from "@nextui-org/theme";
-import {User} from "@nextui-org/user";
+import { User } from "@nextui-org/user";
 
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
@@ -17,7 +17,7 @@ export default function Home() {
         <span className={title({ color: "red" })}>the future home&nbsp;</span>
         <br />
         <span className={title()}>
-          of the UW-Madison Curling Club.
+          of the Curling Club of UW-Madison.
         </span>
         <div className={subtitle({ class: "mt-4" })}>
           Good Curling!
@@ -34,7 +34,7 @@ export default function Home() {
           })}
           href={siteConfig.links.instagram}
         >
-          <InstagramIcon size={20}/>
+          <InstagramIcon size={20} />
           Instagram
         </Link>
       </div>
@@ -42,28 +42,28 @@ export default function Home() {
 
       <div className="flex gap-3">
         <span className={subtitle()}>Created by:</span>
-      <User   
-      name="Nick DiCristo"
-      description={(
-        <Link href="https://www.linkedin.com/in/nicholas-dicristo/" size="sm" isExternal>
-          @ndicristo27
-        </Link>
-      )}
-      avatarProps={{
-        src: "https://media.licdn.com/dms/image/v2/D5635AQEUM2iTfcjqvw/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1692225881272?e=1729497600&v=beta&t=2i9qsLwX9YSOo9ZFhQmhiklxTrUI-NL-2-xlECv3VMM"
-      }}
-    />
-    <User   
-      name="Mason Maeder"
-      description={(
-        <Link href="https://www.linkedin.com/in/mason-maeder/" size="sm" isExternal>
-          @masonmaeder
-        </Link>
-      )}
-      avatarProps={{
-        src: "https://www.masonmaeder.com/assets/images/me.jpeg"
-      }}
-    />
+        <User
+          name="Nick DiCristo"
+          description={(
+            <Link href="https://www.linkedin.com/in/nicholas-dicristo/" size="sm" isExternal>
+              @ndicristo27
+            </Link>
+          )}
+          avatarProps={{
+            src: "https://media.licdn.com/dms/image/v2/D5635AQEUM2iTfcjqvw/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1692225881272?e=1729497600&v=beta&t=2i9qsLwX9YSOo9ZFhQmhiklxTrUI-NL-2-xlECv3VMM"
+          }}
+        />
+        <User
+          name="Mason Maeder"
+          description={(
+            <Link href="https://www.linkedin.com/in/mason-maeder/" size="sm" isExternal>
+              @masonmaeder
+            </Link>
+          )}
+          avatarProps={{
+            src: "https://www.masonmaeder.com/assets/images/me.jpeg"
+          }}
+        />
       </div>
     </section>
   );

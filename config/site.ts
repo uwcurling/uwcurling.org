@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "UW Curling",
-  description: "Official home of the UW-Madison Curling Club!",
+  name: "Curling Club of UW-Madison",
+  description: "Official home of the Curling Club of UW-Madison!",
   navItems: [
     {
       label: "Home",
