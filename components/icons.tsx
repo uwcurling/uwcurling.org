@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import { Image } from "@nextui-org/image";
 import { IconSvgProps } from "@/types";
 import { CurlingIcon } from 'hugeicons-react'
 export const Logo: React.FC<IconSvgProps> = ({
@@ -8,8 +8,43 @@ export const Logo: React.FC<IconSvgProps> = ({
   height,
   ...props
 }) => (
- <CurlingIcon size={36} color="#C5050C"/>
+  <CurlingIcon size={36} color="#C5050C" />
 );
+export const CurlingBucky: React.FC<IconSvgProps> = ({
+  size = 250,
+  width,
+  height,
+  ...props
+}) => (
+  <Image
+          className="object-contain"
+            width={250}
+            height={250} 
+            src="https://github.com/uwcurling/uwcurling.org/blob/main/curlingbucky.jpg?raw=true">
+    </Image>
+);
+
+
+export const RecwellIcon: React.FC<IconSvgProps> = ({
+  size = 24,
+  width,
+  height,
+  ...props
+}) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} color={"#000000"} fill={"none"} {...props}>
+      <path d="M2 22H21.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M3 13V22M21 13V22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M7.5 8V22M16.5 8V22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M2 13H7M22 13H17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M6.5 8H17.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M12 8V4.98221M12 4.98221V2.97035C12 2.49615 12 2.25905 12.1464 2.11173C12.6061 1.64939 14.5 2.74303 15.2203 3.18653C15.8285 3.56105 16 4.30914 16 4.98221H12Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M12 22L12 20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M10.5 12L10.5 12.5M13.5 12V12.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M10.5 16L10.5 16.5M13.5 16V16.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+};
 
 export const InstagramIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" width={25} height={25} color={"#000000"} fill={"none"} {...props}>

@@ -2,69 +2,54 @@ import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
 import { button as buttonStyles } from "@nextui-org/theme";
-import {User} from "@nextui-org/user";
+import { User } from "@nextui-org/user";
 
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import { InstagramIcon, ParagraphIcon } from "hugeicons-react";
+import { Button } from "@nextui-org/button";
+import { Image } from "@nextui-org/image";
+import curlingbucky from '/curlingbucky.jpg'
+import {
+  TwitterIcon,
+  DiscordIcon,
+  HeartFilledIcon,
+  SearchIcon,
+  Logo,
+  RecwellIcon,
+  CurlingBucky
+} from "@/components/icons";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <div className="inline-block max-w-xl text-center justify-center">
-        <span className={title()}>Welcome to&nbsp;</span>
-        <span className={title({ color: "red" })}>the future home&nbsp;</span>
-        <br />
-        <span className={title()}>
-          of the UW-Madison Curling Club.
-        </span>
-        <div className={subtitle({ class: "mt-4" })}>
-          Good Curling!
-        </div>
-      </div>
-
-      <div className="flex gap-3">
-        <Link
-          isExternal
-          className={buttonStyles({
-            color: "default",
-            radius: "full",
-            variant: "shadow",
-          })}
-          href={siteConfig.links.instagram}
-        >
-          <InstagramIcon size={20}/>
-          Instagram
-        </Link>
-      </div>
-
-
-      <div className="flex gap-3">
-        <span className={subtitle()}>Created by:</span>
-      <User   
-      name="Nick DiCristo"
-      description={(
-        <Link href="https://www.linkedin.com/in/nicholas-dicristo/" size="sm" isExternal>
-          @ndicristo27
-        </Link>
-      )}
-      avatarProps={{
-        src: "https://media.licdn.com/dms/image/v2/D5635AQEUM2iTfcjqvw/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1692225881272?e=1729497600&v=beta&t=2i9qsLwX9YSOo9ZFhQmhiklxTrUI-NL-2-xlECv3VMM"
-      }}
-    />
-    <User   
-      name="Mason Maeder"
-      description={(
-        <Link href="https://www.linkedin.com/in/mason-maeder/" size="sm" isExternal>
-          @masonmaeder
-        </Link>
-      )}
-      avatarProps={{
-        src: "https://www.masonmaeder.com/assets/images/me.jpeg"
-      }}
-    />
-      </div>
-    </section>
+     <div className="bg-gradient-to-b from-[#C5050C] to-transparent dark:from-[#C5050C] relative text-center image-center h-max w-screen flex flex-col flex-wrap justify-center">
+      <div className="flex-auto grow order-1		relative inset-x-0 top-0   ">
+      <Image
+      className="max-w-none"
+            height={250}
+            alt="d"
+            width={250}
+            src="https://github.com/uwcurling/uwcurling.org/blob/main/curlingbucky.jpg?raw=true">
+            
+    </Image>
+    </div>
+      <div className="flex-auto order-2 static inset-x-0 top-0">
+      <span className={title()}>
+            Competitive Curling at the University of Wisconsin
+          </span>
+          <span className={subtitle({ class: "mt-4" })}>
+            Travel the nation and defend our 2024 National Championship!
+          </span>
+      <div className="space-x-3 py-8	">
+            <Button className="bg-[#17202a]" color="primary" size="lg">
+            <a href="/">Members</a>
+            </Button>
+            <Button className="bg-[#17202a]" color="primary" size="lg">
+            <a href="/join">Join Club Curling!</a>
+            </Button>
+          </div>
+          </div>
+     </div>
   );
 }

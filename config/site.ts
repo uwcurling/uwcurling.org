@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "UW Curling",
+  name: "UW Curling Club",
   description: "Official home of the UW-Madison Curling Club!",
   navItems: [
     {
@@ -9,50 +9,59 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "Standings",
-      href: "/standings",
+      label: "Join",
+      href: "/join",
     },
     {
-      label: "Competitions",
-      href: "/competitions",
+      label: "Calendar",
+      href: "/calendar",
     },
     {
-      label: "About",
-      href: "/about",
+      label: "Officers",
+      href: "/officers",
     },
     {
-      label: "Contact",
-      href: "/contact",
+      label: "Donate",
+      href: "https://venmo.com/uwcurling",
+    },
+    {
+      label: "USACC",
+      href: "https://collegecurlingusa.org/",
+      target: "_blank",
     },
   ],
   navMenuItems: [
     {
-      label: "Standings",
-      href: "/standings",
+      label: "Home",
+      href: "/",
     },
     {
-      label: "Competitions",
-      href: "/competitions",
+      label: "Join",
+      href: "/join",
     },
     {
-      label: "Contact",
-      href: "/contact",
+      label: "Calendar",
+      href: "/calendar",
     },
     {
-      label: "About",
-      href: "/about",
+      label: "Officers",
+      href: "/officers",
     },
     {
-      label: "Logout",
-      href: "/logout",
+      label: "Donate",
+      href: "https://venmo.com/uwcurling",
+    },
+    {
+      label: "USACC",
+      href: "https://collegecurlingusa.org/",
+      target: "_blank",
     },
   ],
   links: {
-    github: "/",
     twitter: "/",
     instagram: "https://www.instagram.com/curlinguw/",
-    docs: "/",
     discord: "https://discord.gg/mqPgszhKpR",
     sponsor: "https://venmo.com/uwcurling",
+    recwell: "https://recwell.wisc.edu/curling/",
   },
 };
